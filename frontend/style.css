@@ -4,19 +4,20 @@
 }
 
 *::-webkit-scrollbar {
-  width: 12px;
+  background-color: #0f2663;
+  width: 9px;
 }
 
 *::-webkit-scrollbar-track {
-  background: rgba( 255, 255, 255, 0.05 );
-  width: 12px;
-    border-left:solid 1px #000
+  width: 9px;
+  border-left:solid 0.5px #0f2663
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(136,52,228,1) ;
+  background-color: rgba(136,52,228,0.85) ;
   border-radius: 20px;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -95,6 +96,9 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,
 .bg-dark{
     background: #211a2a !important;
 }
+.bg-dark-blue{
+    background: #07153a !important;
+}
 .bg-img{
     background-image: url(images/bg.jpg);
     background-size: 100% auto;
@@ -149,6 +153,7 @@ py-6{
 }
 .done:before{
     content: 'Done';
+    color: white;
     display: block;
     position: absolute;
     right: -50px;
