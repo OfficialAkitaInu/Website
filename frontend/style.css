@@ -48,7 +48,10 @@ body.dark{
     color: #fff;
 }
 body.dark-blue{
-    background: #07153a;
+    background: -webkit-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
+    background: -moz-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
+    background: -o-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
+    background: linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
     color: #fff;
 }
 body.dark-discord{
@@ -97,7 +100,10 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,
     background: #211a2a !important;
 }
 .bg-dark-blue{
-    background: #07153a !important;
+    background: -webkit-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
+    background: -moz-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
+    background: -o-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
+    background: linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
 }
 .bg-img{
     background-image: url(images/bg.jpg);
@@ -143,6 +149,9 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,
 py-6{
     padding-top:6rem;
     padding-bottom:6rem;
+}
+.navbar-toggler {
+    border: 0px;
 }
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;

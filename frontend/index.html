@@ -21,12 +21,12 @@
 </head>
 
 <body class="dark-blue">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-none border-bottom border-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue border-bottom border-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images/akitalogo.webp" alt="" width="60"> Akita Inu ASA
             </a>
-            <button class="navbar-toggler rounded-4 shadow-sm border-light border purpleGradient" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler rounded-4 shadow-sm purpleGradient" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,19 +50,19 @@
                         <a class="nav-link" aria-current="page" href="#charity">Charity</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832">Purchase</a>
+                        <a class="nav-link" target="_blank" aria-current="page" href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832">Purchase</a>
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a href="https://tinychart.org/asset/384303832" class="btn rounded-pill btn-success" id="price">Loading...</a>
-                    <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" class="btn btn-dark purpleGradient rounded-pill mx-auto ms-lg-2 d-block d-lg-inline mt-2 mb-4 m-md-0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exchange-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="d-inline-block" width="18">
+                    <a href="https://tinychart.org/asset/384303832" target="_blank" class="btn rounded-pill btn-success mx-auto ms-lg-2 d-block d-lg-inline mt-2 mb-4 m-md-0" id="price">Loading...</a>
+                    <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-dark purpleGradient rounded-pill mx-auto ms-lg-2 d-block d-lg-inline mt-2 mb-4 m-md-0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exchange-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="d-inline-block" width="18">
                             <path fill="currentColor" d="M0 168v-16c0-13.255 10.745-24 24-24h360V80c0-21.367 25.899-32.042 40.971-16.971l80 80c9.372 9.373 9.372 24.569 0 33.941l-80 80C409.956 271.982 384 261.456 384 240v-48H24c-13.255 0-24-10.745-24-24zm488 152H128v-48c0-21.314-25.862-32.08-40.971-16.971l-80 80c-9.372 9.373-9.372 24.569 0 33.941l80 80C102.057 463.997 128 453.437 128 432v-48h360c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24z" class=""></path>
                         </svg> Swap on TinyMan</a>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="py-5 purpleGradient text-white">
+    <div class="py-5 purpleGradient text-white border-top">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-md-5 offset-md-1">
@@ -78,7 +78,7 @@
             </div>
         </div>
     </div>
-    <div class="py-5 border-top border-dark bg-dark-blue text-white">
+    <div class="py-5 border-top bg-dark-blue text-white">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-md-5 offset-md-1">
@@ -98,12 +98,12 @@
             </div>
         </div>
     </div>
-    <div class="py-6 border-top" id="ecosystem">
+    <div class="py-6 border-top bg-dark-blue" id="ecosystem">
         <div class="container">
             <h2 class="mb-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Ecosystem</span></h2>
             <div class="row row-eq-height text-white">
-                <div class="col-12 col-md-5 offset-md-1">
-                    <div class="bg-dark-blue p-4 rounded-4">
+                <div class="col-12 col-md-5 offset-md-1 px-4">
+                    <div class="bg-dark p-4 rounded-4">
                         <h4>AKITA INU TOKEN<br /><small class="text-white-50">ASA ID#384303832</small></h4>
                         <ul>
                             <li>1 Billion AKITA INU Created</li>
@@ -115,8 +115,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-5">
-                    <div class="bg-dark-blue p-4 rounded-4 mt-4 mt-md-0">
+                <div class="col-12 col-md-5 px-4">
+                    <div class="bg-dark p-4 rounded-4 mt-4 mt-md-0">
                         <h4>Official AKITA NFT<br /><small class="text-white-50">ASA ID#388950186</small></h4>
                         <ul>
                             <li>We Created 10,000 AKITA LOGO NFTs for Airdrops! These LOGO NFTs are perfect avatars to help spread awareness!</li>
@@ -131,7 +131,7 @@
             </div>
         </div>
     </div>
-    <div class="purpleGradient py-6 text-white position-relative" id="timeline">
+    <div class="purpleGradient py-6 text-white position-relative px-4 border-top" id="timeline">
         <h2 class="mb-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Timeline</span></h2>
         <div class="container small-width">
             <div class="row text-white-50">
@@ -202,7 +202,24 @@
             </div>
         </div>
     </div>
-    <div class="bg-dark position-relative" id="nfts">
+    <div class="py-6 bg-dark-blue border-top" id="charity">
+        <div class="container">
+            <h2 class="mb-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Charity</span></h2>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 offset-md-1">
+                    <div class="px-4">
+                        <h2 class="mb-4">Making Life Better for our Four-Legged Friends</h2>
+                        <p>According to the ASPCA, around 3.1 million dogs enter animal shelters each year in the U.S. alone. Of these, approximately 390,000 are euthanized. Add this to the estimated total of 200 million strays currently in existence around the globe, and it quickly becomes apparent that these animals are in need of our help.</p>
+                        <p class="mb-4">At Akita Inu, we’re committed to playing our part. We pledge to make direct donations to shelters, organize community fundraising initiatives, sell exclusive NFTs, and do a whole lot more besides to make life better for our four-legged friends, wherever they may be in the world.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <img src="images/akita-inu-smile.webp" class="img-fluid d-block mx-auto rounded-4" width="350" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark position-relative border-top" id="nfts">
         <div class="position-absolute mt-5 top-0 start-50 translate-middle-x rounded-pill bg-white border p-4 h2 mb-0 shadow text-dark">NFT's</div>
         <div class="row g-0">
             <div class="col-3">
@@ -231,7 +248,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-dark-blue py-6 text-white" id="community">
+    <div class="bg-dark-blue py-6 text-white border-top" id="community">
         <div class="container small-width">
             <div class="px-4">
                 <h2 class="mb-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Community</span></h2>
@@ -248,12 +265,7 @@
             </div>
         </div>
     </div>
-    <div class="py-6" id="charity">
-        <div class="container">
-            <h2 class="mb-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Charity</span></h2>
-        </div>
-    </div>
-    <div class="py-6 border-top">
+    <div class="py-6 border-top bg-dark-blue">
         <div class="container text-center">
             <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-light btn-sm mx-2">Swap on TinyMan</a> <a href="#" target="_blank" class="btn btn-light btn-sm mx-2">Algorand Foundation</a><br />
             <p class="pt-5 mb-0">&copy; 2021 Akita Inu ASA</p>
