@@ -66,6 +66,22 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,
 .semi-bold{
     font-weight:600 !important;
 }
+.purpleBackground {
+    background: url("images/purple_background.webp") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+@media screen and (max-width: 800px) {
+    .purpleBackground {
+        background: url("images/purple_background.webp") no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
 .purpleGradient{
     background: -webkit-linear-gradient(rgba(136,52,228,1),rgba(255,99,244,1));
     background: -moz-linear-gradient(rgba(136,52,228,1),rgba(255,99,244,1));
@@ -90,7 +106,6 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,
     transition: background 0.3s ease-out;
 }
 .btn.purpleGradient:hover{
-    
     background-position:100px; 
 }
 .rounded-4 {
@@ -190,4 +205,31 @@ body.dark-discord .bg-dark {
 }
 body.dark-discord .border-dark {
     background:rgba( 255, 255, 255, 0.05 )rgba(255,255,255,0.05) !important;
+}
+
+.ecobg{
+    background: url("images/eco-bg.webp") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+@media screen and (max-width: 800px) {
+    .ecobg{
+        background: url("images/eco-bg.webp") no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+.border-white{
+    border:solid 1px #fff;
+}
+.text-green{
+    color:rgba(143,243,71,1);
+}
+.progress-lg{
+    height: 3rem;
 }
