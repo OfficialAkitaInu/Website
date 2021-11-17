@@ -70,7 +70,9 @@
                     <div class="px-4 px-md-0">
                         <h2 class="mb-4">AKITA INU TOKEN is the premier decentralized community ASA on the Algorand Blockchain.</h2>
                         <p clas="mb-4">1 Billion AKITA were created on inception. More details of how AKITA is distributed can be found below.</p>
-                        <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" class="btn btn-light btn-lg rounded-pill"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; Buy Akita Inu now&nbsp;&nbsp;</a>
+                        <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-light btn-lg rounded-pill"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; Buy Akita Inu now&nbsp;&nbsp;</a>
+                        <a href="documents/AKITAINU-WHITEPAPER-1.0.pdf" target="_blank" class="btn bg-dark-blue text-white btn-lg rounded-pill my-2"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; White Paper&nbsp;&nbsp;</a>
+                        <h4 class="mt-4" id="transactions"><h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-5">
@@ -101,7 +103,7 @@
     </div>
     <div class="ecobg py-6 text-white" id="carbon">
         <div class="container small-width">
-            <h2 class="mb-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Carbon Negative</span></h2>
+            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark">Carbon Negative</span></h1>
             <div class="px-4 px-md-0">
             <div class="row text-center">
                 <div class="col-12 col-md-6">
@@ -143,7 +145,7 @@
     </div>
     <div class="py-6 bg-dark-blue" id="ecosystem">
         <div class="container">
-            <h2 class="mb-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Ecosystem</span></h2>
+            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark">Ecosystem</span></h1>
             <div class="row row-eq-height text-white">
                 <div class="col-12 col-md-5 offset-md-1 px-4">
                     <div class="bg-dark p-4 rounded-4">
@@ -175,7 +177,7 @@
         </div>
     </div>
     <div class="purpleBackground py-6 text-white position-relative px-4" id="timeline">
-        <h2 class="mb-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Timeline</span></h2>
+        <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark">Timeline</span></h1>
         <div class="container small-width">
             <div class="row text-white-50">
                 <div class="col-8 col-md-6 pb-5">
@@ -247,7 +249,7 @@
     </div>
     <div class="py-6 bg-dark-blue" id="charity">
         <div class="container">
-            <h2 class="mb-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Charity</span></h2>
+            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark">Charity</span></h1>
             <div class="row align-items-center">
                 <div class="col-12 col-md-5 offset-md-1">
                     <div class="px-4">
@@ -263,7 +265,7 @@
         </div>
     </div>
     <div class="bg-dark position-relative" id="nfts">
-        <div class="position-absolute mt-5 top-0 start-50 translate-middle-x rounded-pill bg-white border p-4 h2 mb-0 shadow text-dark">NFTs</div>
+        <div class="position-absolute mt-5 top-0 start-50 translate-middle-x bg-white border p-4 h1 mb-0 shadow text-dark">NFTs</div>
         <div class="row g-0">
             <div class="col-3">
                 <img src="images/nft1.webp" class="img-fluid" />
@@ -294,7 +296,7 @@
     <div class="purpleBackground py-6 text-white" id="community">
         <div class="container small-width">
             <div class="px-4">
-                <h2 class="mb-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Community</span></h2>
+                <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark">Community</span></h1>
                 <h2 class="mb-4">Monthly AKITA NFT Collab</h2>
                 <p>There are two things we love almost as much as dogs: the Algo community and NFTs! Our first community project will be a monthly NFT project! Each month, community members can submit an NFT they created for review. We will choose one winner each month. The selected artist from the first month’s draw will receive 1,000,000 AKITA, 10 Algo, and be spotlighted on our site and social media! Additionally, a unique, 1 of 1 NFT will be created and sold to the highest bidder. All proceeds will go to the artist!</p>
                 <p class="mb-4">To Enter: Send your drawings to akitacommunityproject@gmail.com. We will contact the winner directly via the email address you submit. Winners will be announced on the last Sunday of each month. The first winner will be announced on November 28th.</p>
@@ -316,12 +318,12 @@
     </div>
     <script src="third-party/bootstrap.bundle.min.js"></script>
     <script>
-        var getJSON = function(url, callback) {
-            var xhr = new XMLHttpRequest();
+        let getJSON = function(url, callback) {
+            let xhr = new XMLHttpRequest();
             xhr.open('GET', url, true);
             xhr.responseType = 'json';
             xhr.onload = function() {
-                var status = xhr.status;
+                let status = xhr.status;
                 if (status === 200) {
                     callback(null, xhr.response);
                 } else {
@@ -330,15 +332,52 @@
             };
             xhr.send();
         };
+
         getJSON('https://mainnet.analytics.tinyman.org/api/v1/current-asset-prices/',
             function(err, data) {
                 if (err !== null) {
 
                 } else {
                     document.getElementById("price").innerHTML = '$' + data['384303832'].price;
-                    var intervalId = window.setInterval(function(){
-  document.getElementById("price").innerHTML = '$' + data['384303832'].price;
-}, 10000);
+                    let intervalId = window.setInterval(function(){
+                        document.getElementById("price").innerHTML = '$' + data['384303832'].price;
+                    }, 10000);
+                }
+            });
+
+        getJSON('https://indexer.algoexplorerapi.io/v2/assets/384303832?include-all=true',
+            function(err, data) {
+                if (err !== null) {
+
+                } else {
+
+                    // TOTAL CARBON OFFSET
+                    const carbonOffset = 5.0000000000;
+
+                    // ALGO KWH PER TRANSACTION
+                    const kwhCost = 0.000008;
+
+                    // KWH TOTAL CARBON METRIC TONNE
+                    const carbonPound = 0.0003855535;
+
+                    //TOTAL KWH USED
+                    let totalKwh = data.asset['asset-tx-counter'] * kwhCost;
+                    let totalKwh2 = data.asset['asset-tx-counter'] * 70;
+                    
+                    // TOTAL USED PERCENTAGE
+                    let totalPercentage = ((totalKwh*carbonPound)/10000000000).toFixed(20);
+                    
+                    let totalPercentage2 = ((totalKwh2*carbonPound)/100).toFixed(20);
+
+                    document.getElementById("txcount").innerHTML = totalKwh.toFixed(5) + ' <small>KWh</small>';
+                    //document.getElementById("progress").innerHTML = (100 - totalPercentage) + '%';
+                    document.getElementById("progress").innerHTML = 0 - (carbonOffset - (totalKwh*carbonPound)).toLocaleString('en-US')+' Mg (t)';
+                    
+                    document.getElementById("txcount2").innerHTML = totalKwh2.toLocaleString('en-US') + ' <small>KWh</small>';
+                    document.getElementById("progress2").innerHTML = (totalKwh2*carbonPound).toLocaleString('en-US')+' Mg (t)';
+
+                    //This is to add the transaction count to an ID of your choice.
+                    document.getElementById("transactions").innerHTML = data.asset['asset-tx-counter'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " AKITA Transactions";
                 }
             });
 
