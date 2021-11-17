@@ -58,3 +58,9 @@
 # 3D Images
 *.3dm
 *.max
+
+# PDF
+*.pdf
+
+# Allow Documents
+!frontend/documents/*
