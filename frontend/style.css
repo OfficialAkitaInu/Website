@@ -48,10 +48,10 @@ body.dark{
     color: #fff;
 }
 body.dark-blue{
-    background: -webkit-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
-    background: -moz-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
-    background: -o-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
-    background: linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
+    background: -webkit-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: -moz-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: -o-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
     color: #fff;
 }
 body.dark-discord{
@@ -115,10 +115,10 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,
     background: #211a2a !important;
 }
 .bg-dark-blue{
-    background: -webkit-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
-    background: -moz-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
-    background: -o-linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
-    background: linear-gradient(rgba(7,21,58,1),rgb(9, 33, 99));
+    background: -webkit-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: -moz-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: -o-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
 }
 .bg-img{
     background-image: url(images/bg.jpg);
@@ -191,7 +191,7 @@ py-6{
     border-color:#333 !important;
 }
 body.dark-blue .border-dark{
-    border-color:#0e1e46 !important;
+    border-color:rgb(22 51 129) !important;
 }
 .bg-dark{
     background: #000 !important;
@@ -232,4 +232,10 @@ body.dark-discord .border-dark {
 }
 .progress-lg{
     height: 3rem;
+}
+#roadmap-btn {
+    margin-right: 10px;
+}
+#buy-akita-now-btn {
+    margin-right: 10px;
 }

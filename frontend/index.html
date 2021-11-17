@@ -36,6 +36,12 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#charity">Charity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#carbon">Sustainability</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#ecosystem">Ecosystem</a>
                     </li>
                     <li class="nav-item">
@@ -46,12 +52,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#community">Community</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#charity">Charity</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" aria-current="page" href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832">Purchase</a>
                     </li>
                 </ul>
                 <div class="d-flex">
@@ -70,9 +70,9 @@
                     <div class="px-4 px-md-0">
                         <h2 class="mb-4">AKITA INU TOKEN is the premier decentralized community ASA on the Algorand Blockchain.</h2>
                         <p clas="mb-4">1 Billion AKITA were created on inception. More details of how AKITA is distributed can be found below.</p>
-                        <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-light btn-lg rounded-pill"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; Buy Akita Inu now&nbsp;&nbsp;</a>
-                        <a href="documents/AKITAINU-WHITEPAPER-1.0.pdf" target="_blank" class="btn bg-dark-blue text-white btn-lg rounded-pill my-2"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; White Paper&nbsp;&nbsp;</a>
-                        <h4 class="mt-4" id="transactions"><h3>
+                        <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" id="buy-akita-now-btn" class="btn btn-light btn-lg rounded-pill"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; Buy Akita Inu now&nbsp;&nbsp;</a>
+                        <a href="documents/AKITAINU-WHITEPAPER-1.0.pdf" target="_blank" class="btn bg-dark-blue text-white btn-lg rounded-pill my-3"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; White Paper&nbsp;&nbsp;</a>
+                        <h4 class="mt-2" id="transactions"><h3>
                     </div>
                 </div>
                 <div class="col-12 col-md-5">
@@ -101,9 +101,26 @@
             </div>
         </div>
     </div>
+    <div class="py-6 purpleBackground" id="charity">
+        <div class="container">
+            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Charity</span></h1>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 offset-md-1">
+                    <div class="px-4">
+                        <h2 class="mb-4">Making Life Better for our Four-Legged Friends</h2>
+                        <p>According to the ASPCA, around 3.1 million dogs enter animal shelters each year in the U.S. alone. Of these, approximately 390,000 are euthanized. Add this to the estimated total of 200 million strays currently in existence around the globe, and it quickly becomes apparent that these animals are in need of our help.</p>
+                        <p class="mb-4">At Akita Inu, we’re committed to playing our part. We pledge to make direct donations to shelters, organize community fundraising initiatives, sell exclusive NFTs, and do a whole lot more besides to make life better for our four-legged friends, wherever they may be in the world.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <img src="images/akita-inu-smile.webp" class="img-fluid d-block mx-auto rounded-4" width="350" />
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="ecobg py-6 text-white" id="carbon">
         <div class="container small-width">
-            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark">Carbon Negative</span></h1>
+            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Carbon Negative</span></h1>
             <div class="px-4 px-md-0">
             <div class="row text-center">
                 <div class="col-12 col-md-6">
@@ -133,7 +150,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <div class="p-4 py-5 mt-4 mt-md-0 bg-dark text-white rounded-3">
+                        <div class="p-4 py-5 mt-4 mt-md-0 bg-black text-white rounded-3">
                             <h5>Carbon emitted.</h5>
                             <small class="text-white-50">Based on same amount of transactions as Akita Inu.</small>
                             <h2 class="text-danger" id="progress2">7,155.229 Mg (t)</h2>
@@ -145,7 +162,7 @@
     </div>
     <div class="py-6 bg-dark-blue" id="ecosystem">
         <div class="container">
-            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark">Ecosystem</span></h1>
+            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Ecosystem</span></h1>
             <div class="row row-eq-height text-white">
                 <div class="col-12 col-md-5 offset-md-1 px-4">
                     <div class="bg-dark p-4 rounded-4">
@@ -170,18 +187,19 @@
                         </ul>
                     </div>
                     <div class="text-center mt-4">
-                        <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" class="btn btn-lg text-white rounded-pill purpleGradient"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; Buy Akita Inu now&nbsp;&nbsp;</a>
+                        <a href="documents/AKITAroadmap-11.15.png" target="_blank" id="roadmap-btn" class="btn btn-lg btn-light text-black rounded-pill"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; Roadmap&nbsp;&nbsp;</a>
+                        <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-lg text-white rounded-pill my-3 purpleGradient"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; Buy Akita Inu Now&nbsp;&nbsp;</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="purpleBackground py-6 text-white position-relative px-4" id="timeline">
-        <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark">Timeline</span></h1>
+        <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Timeline</span></h1>
         <div class="container small-width">
             <div class="row text-white-50">
-                <div class="col-8 col-md-6 pb-5">
-                    <div class="rounded-3 bg-white text-black-50 p-4 done">
+                <div class="col-8 col-md-6 pb-3">
+                    <div class="rounded-3 bg-white text-black-50 py-3 px-4 done">
                         <h4 class="semi-bold">AKITA INU Created</h4>
                         1 Billion AKITA INU TOKEN ASA were created
                     </div>
@@ -198,8 +216,8 @@
                         29<sup>th</sup> Oct<br /><strong>2021</strong>
                     </div>
                 </div>
-                <div class="col-8 col-md-6 pb-5 border-left-dotted">
-                    <div class="rounded-3 bg-white text-black-50 p-4 done">
+                <div class="col-8 col-md-6 pb-3 border-left-dotted">
+                    <div class="rounded-3 bg-white text-black-50 py-3 px-4 done">
                         <h4 class="semi-bold">LOGO and NFT Created</h4>
                         The official logo and 10,000 logo NFTs were created
                     </div>
@@ -207,8 +225,8 @@
             </div>
             <div class="row text-white-50">
 
-                <div class="col-8 col-md-6 pb-5">
-                    <div class="rounded-3 bg-white text-black-50 p-4 done">
+                <div class="col-8 col-md-6 pb-3">
+                    <div class="rounded-3 bg-white text-black-50 py-3 px-4 done">
                         <h4 class="semi-bold">Free Airdrop</h4>
                         Fill out the Google form by 16:00 PST for a free airdrop! ENDED
                     </div>
@@ -225,16 +243,16 @@
                         15<sup>th</sup> Nov<br /><strong>2021</strong>
                     </div>
                 </div>
-                <div class="col-8 col-md-6 pb-5 border-left-dotted">
-                    <div class="rounded-3 bg-white text-black-50 p-4 done">
+                <div class="col-8 col-md-6 pb-3 border-left-dotted">
+                    <div class="rounded-3 bg-white text-black-50 py-3 px-4 done">
                         <h4 class="semi-bold">Final Airdrop!</h4>
                         Check out our Twitter and sign up to the final free airdrop!
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-8 col-md-6 pb-5">
-                    <div class="rounded-3 bg-white text-black p-4">
+                <div class="col-8 col-md-6 pb-3">
+                    <div class="rounded-3 bg-white text-black-50 py-3 px-4 done">
                         <h4 class="semi-bold">Site Launch</h4>
                         Our site is live with community project details!
                     </div>
@@ -245,27 +263,75 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="py-6 bg-dark-blue" id="charity">
-        <div class="container">
-            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark">Charity</span></h1>
-            <div class="row align-items-center">
-                <div class="col-12 col-md-5 offset-md-1">
-                    <div class="px-4">
-                        <h2 class="mb-4">Making Life Better for our Four-Legged Friends</h2>
-                        <p>According to the ASPCA, around 3.1 million dogs enter animal shelters each year in the U.S. alone. Of these, approximately 390,000 are euthanized. Add this to the estimated total of 200 million strays currently in existence around the globe, and it quickly becomes apparent that these animals are in need of our help.</p>
-                        <p class="mb-4">At Akita Inu, we’re committed to playing our part. We pledge to make direct donations to shelters, organize community fundraising initiatives, sell exclusive NFTs, and do a whole lot more besides to make life better for our four-legged friends, wherever they may be in the world.</p>
+            <div class="row text-white-50">
+                <div class="col text-end">
+                    <div class="p-2 d-inline-block bg-light text-dark rounded text-start">
+                        Q4<br/><strong>2021</strong>
                     </div>
                 </div>
-                <div class="col-12 col-md-5">
-                    <img src="images/akita-inu-smile.webp" class="img-fluid d-block mx-auto rounded-4" width="350" />
+                <div class="col-8 col-md-6 pb-3 border-left-dotted">
+                    <div class="rounded-3 bg-white text-black py-3 px-4">
+                        <h4 class="semi-bold">Asset Verification</h4>
+                        When we sleep, we dream of a little blue tick
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 col-md-6 pb-3">
+                    <div class="rounded-3 bg-white text-black py-3 px-4">
+                        <h4 class="semi-bold">Smart Contracts</h4>
+                        We're working round the clock to time-lock the creator's wallet and secure the Community Fund
+                    </div>
+                </div>
+                <div class="col border-left-dotted last">
+                    <div class="p-2 d-inline-block bg-light text-dark rounded text-start">
+                        Q4<br/><strong>2021</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-white-50">
+                <div class="col text-end">
+                    <div class="p-2 d-inline-block bg-light text-dark rounded text-start">
+                        Q1<br/><strong>2022</strong>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 pb-3 border-left-dotted">
+                    <div class="rounded-3 bg-white text-black py-3 px-4">
+                        <h4 class="semi-bold">Merch Store</h4>
+                        Wear your original AKITA designs with pride while we reinvest the profits to support the community
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 col-md-6 pb-3">
+                    <div class="rounded-3 bg-white text-black py-3 px-4">
+                        <h4 class="semi-bold">Exchange Listings</h4>
+                        AKITA's first voyage into the wider crypto universe...
+                    </div>
+                </div>
+                <div class="col border-left-dotted last">
+                    <div class="p-2 d-inline-block bg-light text-dark rounded text-start">
+                        TBA
+                    </div>
+                </div>
+            </div>
+            <div class="row text-white-50">
+                <div class="col text-end">
+                    <div class="p-2 d-inline-block bg-light text-dark rounded text-start">
+                        TBA
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 pb-3 border-left-dotted">
+                    <div class="rounded-3 bg-white text-black py-3 px-4">
+                        <h4 class="semi-bold">Gaming Platform</h4>
+                        If Parzival knew our plans, he wouldn't have bothered searching for the Easter Egg
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="bg-dark position-relative" id="nfts">
-        <div class="position-absolute mt-5 top-0 start-50 translate-middle-x bg-white border p-4 h1 mb-0 shadow text-dark">NFTs</div>
+        <div class="position-absolute mt-5 top-0 start-50 translate-middle-x bg-white border p-4 h1 mb-0 shadow text-dark rounded-3">NFTs</div>
         <div class="row g-0">
             <div class="col-3">
                 <img src="images/nft1.webp" class="img-fluid" />
@@ -296,9 +362,10 @@
     <div class="purpleBackground py-6 text-white" id="community">
         <div class="container small-width">
             <div class="px-4">
-                <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark">Community</span></h1>
+                <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Community</span></h1>
                 <h2 class="mb-4">Monthly AKITA NFT Collab</h2>
-                <p>There are two things we love almost as much as dogs: the Algo community and NFTs! Our first community project will be a monthly NFT project! Each month, community members can submit an NFT they created for review. We will choose one winner each month. The selected artist from the first month’s draw will receive 1,000,000 AKITA, 10 Algo, and be spotlighted on our site and social media! Additionally, a unique, 1 of 1 NFT will be created and sold to the highest bidder. All proceeds will go to the artist!</p>
+                <p>There are two things we love almost as much as dogs: the Algo community and NFTs! Our first community project will be a monthly NFT project! Each month, community members can submit an NFT they created for review. We will choose one winner each month. The selected artist from the first month’s draw will receive 1,000,000 AKITA, and be spotlighted on our site and social media! Additionally, a unique, 1 of 1 NFT will be created and sold to the highest bidder. All proceeds will go to the artist!</p>
+                <p>In order to ensure the long-term viability of this competition, future prizes will be adjusted based on market prices of Akita Inu ASA and will be announced as part of each new competition.</p>
                 <p class="mb-4">To Enter: Send your drawings to akitacommunityproject@gmail.com. We will contact the winner directly via the email address you submit. Winners will be announced on the last Sunday of each month. The first winner will be announced on November 28th.</p>
                 <h4 class="m-0">Additional Community Projects Coming Soon!</h4>
                 <div class="text-center mt-5">
@@ -310,10 +377,10 @@
             </div>
         </div>
     </div>
-    <div class="py-6 bg-dark-blue">
+    <div class="py-5 bg-dark-blue">
         <div class="container text-center">
             <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-light btn-sm mx-2">Swap on Tinyman</a> <a href="https://algorand.foundation/" target="_blank" class="btn btn-light btn-sm mx-2">Algorand Foundation</a><br />
-            <p class="pt-5 mb-0">&copy; 2021 Akita Inu ASA</p>
+            <p class="pt-3 mb-0">&copy; 2021 Akita Inu ASA</p>
         </div>
     </div>
     <script src="third-party/bootstrap.bundle.min.js"></script>
@@ -375,7 +442,7 @@
                     
                     document.getElementById("txcount2").innerHTML = totalKwh2.toLocaleString('en-US') + ' <small>KWh</small>';
                     document.getElementById("progress2").innerHTML = (totalKwh2*carbonPound).toLocaleString('en-US')+' Mg (t)';
-
+                    
                     //This is to add the transaction count to an ID of your choice.
                     document.getElementById("transactions").innerHTML = data.asset['asset-tx-counter'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " AKITA Transactions";
                 }
