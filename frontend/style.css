@@ -4,19 +4,20 @@
 }
 
 *::-webkit-scrollbar {
-  width: 12px;
+  background-color: #0f2663;
+  width: 9px;
 }
 
 *::-webkit-scrollbar-track {
-  background: rgba( 255, 255, 255, 0.05 );
-  width: 12px;
-    border-left:solid 1px #000
+  width: 9px;
+  border-left:solid 0.5px #0f2663
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(136,52,228,1) ;
+  background-color: rgba(136,52,228,0.85) ;
   border-radius: 20px;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -47,7 +48,10 @@ body.dark{
     color: #fff;
 }
 body.dark-blue{
-    background: #07153a;
+    background: -webkit-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: -moz-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: -o-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
     color: #fff;
 }
 body.dark-discord{
@@ -61,6 +65,22 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,
 }
 .semi-bold{
     font-weight:600 !important;
+}
+.purpleBackground {
+    background: url("images/purple_background.webp") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+@media screen and (max-width: 800px) {
+    .purpleBackground {
+        background: url("images/purple_background.webp") no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
 .purpleGradient{
     background: -webkit-linear-gradient(rgba(136,52,228,1),rgba(255,99,244,1));
@@ -86,7 +106,6 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,
     transition: background 0.3s ease-out;
 }
 .btn.purpleGradient:hover{
-    
     background-position:100px; 
 }
 .rounded-4 {
@@ -94,6 +113,12 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,
 }
 .bg-dark{
     background: #211a2a !important;
+}
+.bg-dark-blue{
+    background: -webkit-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: -moz-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: -o-linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
+    background: linear-gradient(rgba(7,21,58,1),rgb(22 51 129));
 }
 .bg-img{
     background-image: url(images/bg.jpg);
@@ -140,6 +165,9 @@ py-6{
     padding-top:6rem;
     padding-bottom:6rem;
 }
+.navbar-toggler {
+    border: 0px;
+}
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
@@ -149,6 +177,7 @@ py-6{
 }
 .done:before{
     content: 'Done';
+    color: white;
     display: block;
     position: absolute;
     right: -50px;
@@ -162,7 +191,7 @@ py-6{
     border-color:#333 !important;
 }
 body.dark-blue .border-dark{
-    border-color:#0e1e46 !important;
+    border-color:rgb(22 51 129) !important;
 }
 .bg-dark{
     background: #000 !important;
@@ -176,4 +205,37 @@ body.dark-discord .bg-dark {
 }
 body.dark-discord .border-dark {
     background:rgba( 255, 255, 255, 0.05 )rgba(255,255,255,0.05) !important;
+}
+
+.ecobg{
+    background: url("images/eco-bg.webp") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+@media screen and (max-width: 800px) {
+    .ecobg{
+        background: url("images/eco-bg.webp") no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+.border-white{
+    border:solid 1px #fff;
+}
+.text-green{
+    color:rgba(143,243,71,1);
+}
+.progress-lg{
+    height: 3rem;
+}
+#roadmap-btn {
+    margin-right: 10px;
+}
+#buy-akita-now-btn {
+    margin-right: 10px;
 }
