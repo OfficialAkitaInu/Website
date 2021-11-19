@@ -23,7 +23,7 @@ jobs:
 
     - name: Backup, deploy then remove old deployment
       uses: appleboy/ssh-action@master
-        with:
+      with:
           script: |
             mv ${{ secrets.REMOTE_TARGET }}/html ${{ secrets.REMOTE_TARGET }}/html-backup
             mv ${{ secrets.REMOTE_TARGET }}/frontend ${{ secrets.REMOTE_TARGET }}/html
