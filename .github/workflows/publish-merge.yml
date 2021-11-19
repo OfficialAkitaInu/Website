@@ -1,0 +1,33 @@
+name: Publish Merge
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-20-04
+    steps:
+    - name: Code checkout
+      uses: actions/checkout@master
+
+    - name: Copy web files to server with scp
+      uses: appleboy/scp-action@master
+      with:
+          source: frontend/
+          target: ${{ secrets.REMOTE_TARGET }}
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.REMOTE_KEY }}
+
+    - name: Backup, deploy then remove old deployment
+      uses: appleboy/ssh-action@master
+        with:
+          script: |
+            mv ${{ secrets.REMOTE_TARGET }}/html ${{ secrets.REMOTE_TARGET }}/html-backup
+            mv ${{ secrets.REMOTE_TARGET }}/frontend ${{ secrets.REMOTE_TARGET }}/html
+            rm -rf ${{ secrets.REMOTE_TARGET }}/html-backup
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.REMOTE_KEY }}
