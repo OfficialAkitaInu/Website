@@ -36,6 +36,12 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#community">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#timeline">Timeline</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#charity">Charity</a>
                     </li>
                     <li class="nav-item">
@@ -45,24 +51,32 @@
                         <a class="nav-link" aria-current="page" href="#ecosystem">Ecosystem</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#timeline">Timeline</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#nfts">NFTs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#community">Community</a>
-                    </li>
+
                 </ul>
                 <div class="d-flex">
-                    <a href="https://tinychart.org/asset/384303832" target="_blank" class="btn rounded-pill btn-success mx-auto ms-lg-2 d-block d-lg-inline mt-2 mb-4 m-md-0" id="price">Loading...</a>
-                    <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-dark purpleGradient rounded-pill mx-auto ms-lg-2 d-block d-lg-inline mt-2 mb-4 m-md-0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exchange-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="d-inline-block" width="18">
-                            <path fill="currentColor" d="M0 168v-16c0-13.255 10.745-24 24-24h360V80c0-21.367 25.899-32.042 40.971-16.971l80 80c9.372 9.373 9.372 24.569 0 33.941l-80 80C409.956 271.982 384 261.456 384 240v-48H24c-13.255 0-24-10.745-24-24zm488 152H128v-48c0-21.314-25.862-32.08-40.971-16.971l-80 80c-9.372 9.373-9.372 24.569 0 33.941l80 80C102.057 463.997 128 453.437 128 432v-48h360c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24z" class=""></path>
+                    <a href="https://tinychart.org/asset/384303832" target="_blank" class="btn rounded-pill btn-success mx-auto ms-lg-2 d-block d-lg-inline mt-2 mb-4 m-md-0 nav-btn-small" id="price">Loading...</a>
+<a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-dark purpleGradient rounded-pill mx-auto ms-lg-2 d-block d-lg-inline mt-2 mb-4 m-md-0 nav-btn-small no-overflow-btn"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exchange-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="d-inline-block" width="18">
+<path fill="currentColor" d="M0 168v-16c0-13.255 10.745-24 24-24h360V80c0-21.367 25.899-32.042 40.971-16.971l80 80c9.372 9.373 9.372 24.569 0 33.941l-80 80C409.956 271.982 384 261.456 384 240v-48H24c-13.255 0-24-10.745-24-24zm488 152H128v-48c0-21.314-25.862-32.08-40.971-16.971l-80 80c-9.372 9.373-9.372 24.569 0 33.941l80 80C102.057 463.997 128 453.437 128 432v-48h360c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24z" class=""></path>
                         </svg> Swap on Tinyman</a>
                 </div>
             </div>
         </div>
     </nav>
+    <div id="app-content"></div>
+
+    <div class="py-5 bg-dark-blue">
+        <div class="container text-center">
+            <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-light btn-sm mx-2">Swap on Tinyman</a> <a href="https://algorand.foundation/" target="_blank" class="btn btn-light btn-sm mx-2">Algorand Foundation</a><br />
+            <p class="pt-3 mb-0">&copy; 2021 Akita Inu ASA</p>
+        </div>
+    </div>
+    <script src="third-party/bootstrap.bundle.min.js"></script>
+    <script>
+        function getHTMLContent(fragmentId){
+            //return pages as HTML strings to be rendered within app-content div
+            var homeContent=`<div>
     <div class="py-5 purpleBackground text-white">
         <div class="container">
             <div class="row align-items-center">
@@ -101,99 +115,7 @@
             </div>
         </div>
     </div>
-    <div class="py-6 purpleBackground" id="charity">
-        <div class="container">
-            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Charity</span></h1>
-            <div class="row align-items-center">
-                <div class="col-12 col-md-5 offset-md-1">
-                    <div class="px-4">
-                        <h2 class="mb-4">Making Life Better for our Four-Legged Friends</h2>
-                        <p>According to the ASPCA, around 3.1 million dogs enter animal shelters each year in the U.S. alone. Of these, approximately 390,000 are euthanized. Add this to the estimated total of 200 million strays currently in existence around the globe, and it quickly becomes apparent that these animals are in need of our help.</p>
-                        <p class="mb-4">At Akita Inu, we’re committed to playing our part. We pledge to make direct donations to shelters, organize community fundraising initiatives, sell exclusive NFTs, and do a whole lot more besides to make life better for our four-legged friends, wherever they may be in the world.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-5">
-                    <img src="images/akita-inu-smile.webp" class="img-fluid d-block mx-auto rounded-4" width="350" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="ecobg py-6 text-white" id="carbon">
-        <div class="container small-width">
-            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Carbon Negative</span></h1>
-            <div class="px-4 px-md-0">
-            <div class="row text-center">
-                <div class="col-12 col-md-6">
-                    <div class="p-4 py-5 bg-success text-dark rounded-3">
-                        <h5 class="text-white">Total energy used by Akita Inu.</h5>
-                        <h2 class="text-green" id="txcount">2.12095 <small>KWh</small></h2>
-                        <small class="text-white">Average annual household usage 10,715 kWh</small>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="p-4 py-5 mt-4 mt-md-0 bg-light text-dark rounded-3">
-                        <h5>Carbon emitted.</h5>
-                        <h2 class="text-success" id="progress">-4.999 Mg (t)</h2>
-                        <small>Carbon emitted = ZERO</small>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <h2 class="my-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Vs</span></h2>
-            <div class="px-4 px-md-0">
-                <div class="row text-center">
-                    <div class="col-12 col-md-6">
-                        <div class="p-4 py-5 bg-danger text-dark rounded-3">
-                            <h5 class="text-white">Total energy used by ERC20 Token.</h5>
-                            <small class="text-white">Based on same amount of transactions as Akita Inu.</small>
-                            <h2 class="text-black" id="txcount2">18,558,330 <small>KWh</small></h2>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="p-4 py-5 mt-4 mt-md-0 bg-black text-white rounded-3">
-                            <h5>Carbon emitted.</h5>
-                            <small class="text-white-50">Based on same amount of transactions as Akita Inu.</small>
-                            <h2 class="text-danger" id="progress2">7,155.229 Mg (t)</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="py-6 bg-dark-blue" id="ecosystem">
-        <div class="container">
-            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Ecosystem</span></h1>
-            <div class="row row-eq-height text-white">
-                <div class="col-12 col-md-5 offset-md-1 px-4">
-                    <div class="bg-dark p-4 rounded-4">
-                        <h4>AKITA INU TOKEN<br /><small class="text-white-50">ASA ID#384303832</small></h4>
-                        <ul>
-                            <li>1 Billion AKITA INU created</li>
-                            <li>350,000,000 added to Tinyman Liquidity Pool (35%)</li>
-                            <li>250,000,000 AKITA airdropped to users by request on Oct 31st, 2021 (25%)</li>
-                            <li>50,000,000 AKITA reserved for the creator with a minimum 1 year lock up period (5%)</li>
-                            <li>200,000,000 AKITA reserved for the AKITA Community Project (20%)</li>
-                            <li>150,000,000 AKITA airdropped to users by request from Nov. 13th-15th, 2021 (15%)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-5 px-4">
-                    <div class="bg-dark p-4 rounded-4 mt-4 mt-md-0">
-                        <h4>Official AKITA NFT<br /><small class="text-white-50">ASA ID#388950186</small></h4>
-                        <ul>
-                            <li>We created 10,000 AKITA LOGO NFTs for airdrops! These LOGO NFTs are perfect avatars to help spread awareness!</li>
-                            <li>10,000 AKITA NFTs created</li>
-                            <li>10,000 AKITA NFTs for airdrops (100%)</li>
-                        </ul>
-                    </div>
-                    <div class="text-center mt-4">
-                        <a href="documents/AKITAroadmap-11.15.png" target="_blank" id="roadmap-btn" class="btn btn-lg btn-light text-black rounded-pill"><img src="images/AkitaInu-webicon-paperblue2.webp" class="img-fluid" width="40" /> &nbsp;Roadmap&nbsp;&nbsp;</a>
-                        <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-lg text-white rounded-pill my-3 purpleGradient"><img src="images/AkitaInu-ICON-solidwhite2.webp" class="img-fluid" width="40" /> &nbsp;Buy Akita Inu Now&nbsp;&nbsp;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="purpleBackground py-6 text-white position-relative px-4" id="timeline">
         <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Timeline</span></h1>
         <div class="container small-width">
@@ -330,7 +252,130 @@
             </div>
         </div>
     </div>
-    <div class="bg-dark position-relative" id="nfts">
+
+    <div class="purpleBackground py-6 text-white" id="community">
+        <div class="container small-width">
+            <div class="px-4">
+                <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Community</span></h1>
+                <h2 class="mb-4">Monthly AKITA NFT Collab</h2>
+                <p>There are two things we love almost as much as dogs: the Algo community and NFTs! Our first community project will be a monthly NFT project! Each month, community members can submit an NFT they created for review. We will choose one winner each month. </p>
+                <p>For the first month’s collab, the community will vote for their favorite and the winner will receive 1,000,000 AKITA, and be spotlighted on our site and social media! Additionally, a unique, 1 of 1 NFT will be created and sold to the highest bidder. All proceeds will go to the artist!</p>
+                <p>In order to ensure the long-term viability of this competition, future prizes will be adjusted based on market prices of Akita Inu ASA and will be announced as part of each new competition.</p>
+                <p class="mb-4"><b>To Enter:</b> submit your original artwork to the attached google form. NFT designs that have been previously minted will not be eligible to win. Deadline for submission is Sunday, November 28th at 11:59pm PST</p>
+                <p><b>Voting:</b> We will create a form for the community to vote on their favorite NFT design. The form will be posted on Monday, November 29th at 7pm PST. Voting will conclude on Thursday, December 2nd.</p>
+                <p><b>Auction:</b> A 72 hour auction on AlgoGems will start on Thursday, December 2nd, to conclude on Sunday, Dec 4th. After which, Akita Inu will send proceeds of the auction from the community wallet to the winner’s wallet.</p>
+                <p>Get creative and good luck!</p>
+                <div class="text-center mb-5">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfi_KKmsWXBppGA2e8Wa2kzCSvA5XF07VBw4apr4oZXbo68mA/viewform" class="my-3 btn btn-light btn-lg rounded-pill btn-lg px-4 mx-2" target="_blank">Enter Now</a>
+                </div>
+                <h4 class="m-0">Additional Community Projects Coming Soon!</h4>
+                <div class="text-center mt-5">
+                    <a href="https://reddit.com/r/AkitaInuASA/" class="my-3 btn btn-light btn-lg rounded-pill btn-lg px-4 mx-2" target="_blank"><i class="fab fa-reddit-alien"></i> Reddit</a>
+                    <a href="https://twitter.com/AkitaInuASA" class="my-3 btn btn-light btn-lg rounded-pill btn-lg px-4 mx-2" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://discord.gg/SmMuHws8nT" class="my-3 btn btn-light btn-lg rounded-pill btn-lg px-4 mx-2" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+                    <a href="https://www.instagram.com/akitainuasa_official/" class="my-3 btn btn-light btn-lg rounded-pill btn-lg px-4 mx-2" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`;
+                var pages = {
+                home: homeContent,
+                timeline: homeContent,
+                community: homeContent,
+                carbon: `<div class="ecobg py-6 text-white" id="carbon">
+        <div class="container small-width">
+            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Carbon Negative</span></h1>
+            <div class="px-4 px-md-0">
+            <div class="row text-center">
+                <div class="col-12 col-md-6">
+                    <div class="p-4 py-5 bg-success text-dark rounded-3">
+                        <h5 class="text-white">Total energy used by Akita Inu.</h5>
+                        <h2 class="text-green" id="txcount">2.12095 <small>KWh</small></h2>
+                        <small class="text-white">Average annual household usage 10,715 kWh</small>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="p-4 py-5 mt-4 mt-md-0 bg-light text-dark rounded-3">
+                        <h5>Carbon emitted.</h5>
+                        <h2 class="text-success" id="progress">-4.999 Mg (t)</h2>
+                        <small>Carbon emitted = ZERO</small>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <h2 class="my-5 text-center"><span class="mx-auto d-inline-block rounded-pill bg-white border p-4 mb-0 shadow text-dark">Vs</span></h2>
+            <div class="px-4 px-md-0">
+                <div class="row text-center">
+                    <div class="col-12 col-md-6">
+                        <div class="p-4 py-5 bg-danger text-dark rounded-3">
+                            <h5 class="text-white">Total energy used by ERC20 Token.</h5>
+                            <small class="text-white">Based on same amount of transactions as Akita Inu.</small>
+                            <h2 class="text-black" id="txcount2">18,558,330 <small>KWh</small></h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="p-4 py-5 mt-4 mt-md-0 bg-black text-white rounded-3">
+                            <h5>Carbon emitted.</h5>
+                            <small class="text-white-50">Based on same amount of transactions as Akita Inu.</small>
+                            <h2 class="text-danger" id="progress2">7,155.229 Mg (t)</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`,
+                charity: `  <div class="py-6 purpleBackground" id="charity"><div class="container">
+            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Charity</span></h1>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 offset-md-1">
+                    <div class="px-4">
+                        <h2 class="mb-4">Making Life Better for our Four-Legged Friends</h2>
+                        <p>According to the ASPCA, around 3.1 million dogs enter animal shelters each year in the U.S. alone. Of these, approximately 390,000 are euthanized. Add this to the estimated total of 200 million strays currently in existence around the globe, and it quickly becomes apparent that these animals are in need of our help.</p>
+                        <p class="mb-4">At Akita Inu, we’re committed to playing our part. We pledge to make direct donations to shelters, organize community fundraising initiatives, sell exclusive NFTs, and do a whole lot more besides to make life better for our four-legged friends, wherever they may be in the world.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <img src="images/akita-inu-smile.webp" class="img-fluid d-block mx-auto rounded-4" width="350" />
+                </div>
+            </div>
+        </div></div>`,
+                ecosystem: ` <div class="py-6 bg-dark-blue" id="ecosystem">
+        <div class="container">
+            <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Ecosystem</span></h1>
+            <div class="row row-eq-height text-white">
+                <div class="col-12 col-md-5 offset-md-1 px-4">
+                    <div class="bg-dark p-4 rounded-4">
+                        <h4>AKITA INU TOKEN<br /><small class="text-white-50">ASA ID#384303832</small></h4>
+                        <ul>
+                            <li>1 Billion AKITA INU created</li>
+                            <li>350,000,000 added to Tinyman Liquidity Pool (35%)</li>
+                            <li>250,000,000 AKITA airdropped to users by request on Oct 31st, 2021 (25%)</li>
+                            <li>50,000,000 AKITA reserved for the creator with a minimum 1 year lock up period (5%)</li>
+                            <li>200,000,000 AKITA reserved for the AKITA Community Project (20%)</li>
+                            <li>150,000,000 AKITA airdropped to users by request from Nov. 13th-15th, 2021 (15%)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 px-4">
+                    <div class="bg-dark p-4 rounded-4 mt-4 mt-md-0">
+                        <h4>Official AKITA NFT<br /><small class="text-white-50">ASA ID#388950186</small></h4>
+                        <ul>
+                            <li>We created 10,000 AKITA LOGO NFTs for airdrops! These LOGO NFTs are perfect avatars to help spread awareness!</li>
+                            <li>10,000 AKITA NFTs created</li>
+                            <li>10,000 AKITA NFTs for airdrops (100%)</li>
+                        </ul>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="documents/AKITAroadmap-11.15.png" target="_blank" id="roadmap-btn" class="btn btn-lg btn-light text-black rounded-pill"><img src="images/AkitaInu-webicon-paperblue2.webp" class="img-fluid" width="40" /> &nbsp;Roadmap&nbsp;&nbsp;</a>
+                        <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-lg text-white rounded-pill my-3 purpleGradient"><img src="images/AkitaInu-ICON-solidwhite2.webp" class="img-fluid" width="40" /> &nbsp;Buy Akita Inu Now&nbsp;&nbsp;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`,
+                nfts:
+    `<div class="bg-dark position-relative" id="nfts">
         <div class="position-absolute mt-5 top-0 start-50 translate-middle-x bg-white border p-4 h1 mb-0 shadow text-dark rounded-3">NFTs</div>
         <div class="row g-0">
             <div class="col-3">
@@ -358,39 +403,29 @@
                 <img src="images/nft8.webp" class="img-fluid" />
             </div>
         </div>
-    </div>
-    <div class="purpleBackground py-6 text-white" id="community">
-        <div class="container small-width">
-            <div class="px-4">
-                <h1 class="mb-5 text-center"><span class="mx-auto d-inline-block bg-white border p-4 mb-0 shadow text-dark rounded-3">Community</span></h1>
-                <h2 class="mb-4">Monthly AKITA NFT Collab</h2>
-                <p>There are two things we love almost as much as dogs: the Algo community and NFTs! Our first community project will be a monthly NFT project! Each month, community members can submit an NFT they created for review. We will choose one winner each month. </p>
-                <p>For the first month’s collab, the community will vote for their favorite and the winner will receive 1,000,000 AKITA, and be spotlighted on our site and social media! Additionally, a unique, 1 of 1 NFT will be created and sold to the highest bidder. All proceeds will go to the artist!</p>
-                <p>In order to ensure the long-term viability of this competition, future prizes will be adjusted based on market prices of Akita Inu ASA and will be announced as part of each new competition.</p>
-                <p class="mb-4"><b>To Enter:</b> submit your original artwork to the attached google form. NFT designs that have been previously minted will not be eligible to win. Deadline for submission is Sunday, November 28th at 11:59pm PST</p>
-                <p><b>Voting:</b> We will create a form for the community to vote on their favorite NFT design. The form will be posted on Monday, November 29th at 7pm PST. Voting will conclude on Thursday, December 2nd.</p>
-                <p><b>Auction:</b> A 72 hour auction on AlgoGems will start on Thursday, December 2nd, to conclude on Sunday, Dec 4th. After which, Akita Inu will send proceeds of the auction from the community wallet to the winner’s wallet.</p>
-                <p>Get creative and good luck!</p>
-                <div class="text-center mb-5">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfi_KKmsWXBppGA2e8Wa2kzCSvA5XF07VBw4apr4oZXbo68mA/viewform" class="my-3 btn btn-light btn-lg rounded-pill btn-lg px-4 mx-2" target="_blank">Enter Now</a>
-                </div>
-                <h4 class="m-0">Additional Community Projects Coming Soon!</h4>
-                <div class="text-center mt-5">
-                    <a href="https://reddit.com/r/AkitaInuASA/" class="my-3 btn btn-light btn-lg rounded-pill btn-lg px-4 mx-2" target="_blank"><i class="fab fa-reddit-alien"></i> Reddit</a>
-                    <a href="https://twitter.com/AkitaInuASA" class="my-3 btn btn-light btn-lg rounded-pill btn-lg px-4 mx-2" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="https://discord.gg/SmMuHws8nT" class="my-3 btn btn-light btn-lg rounded-pill btn-lg px-4 mx-2" target="_blank"><i class="fab fa-discord"></i> Discord</a>
-                    <a href="https://www.instagram.com/akitainuasa_official/" class="my-3 btn btn-light btn-lg rounded-pill btn-lg px-4 mx-2" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="py-5 bg-dark-blue">
-        <div class="container text-center">
-            <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-light btn-sm mx-2">Swap on Tinyman</a> <a href="https://algorand.foundation/" target="_blank" class="btn btn-light btn-sm mx-2">Algorand Foundation</a><br />
-            <p class="pt-3 mb-0">&copy; 2021 Akita Inu ASA</p>
-        </div>
-    </div>
-    <script src="third-party/bootstrap.bundle.min.js"></script>
+    </div>`,
+            };
+            if(fragmentId==''){
+                return pages['home'];
+            }
+
+            return pages[fragmentId];
+        }
+
+        function loadHTMLContent(){
+            var contentDiv = document.getElementById("app-content"),
+                fragmentId = location.hash.substr(1);
+            contentDiv.innerHTML = getHTMLContent(fragmentId);
+        }
+
+        if(!location.hash) {
+            location.hash = "";
+        }
+
+        loadHTMLContent();
+
+        window.addEventListener("hashchange", loadHTMLContent)
+    </script>
     <script>
         let getJSON = function(url, callback) {
             let xhr = new XMLHttpRequest();
