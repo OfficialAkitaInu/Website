@@ -62,5 +62,10 @@
 # PDF
 *.pdf
 
+# Mac Files
+.DS_Store
+__MACOSX
+
+
 # Allow Documents
 !frontend/documents/*

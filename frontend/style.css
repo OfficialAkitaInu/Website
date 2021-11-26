@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5,h6,.navbar-brand,
     -o-background-size: cover;
     background-size: cover;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
     .purpleBackground {
         background: url("images/purple_background.webp") no-repeat center center; 
         -webkit-background-size: cover;
