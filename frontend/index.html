@@ -17,6 +17,9 @@
     <link href="style.css" rel="stylesheet">
 
     <link href="third-party/georama.css" rel="stylesheet">
+    
+    <!-- For local testing without web server. -->
+    <script>if (location.protocol === "file:") { var s = document.createElement("script"); s.src = "local.js"; document.head.appendChild(s); }</script>
 
     <title>Akita Inu ASA</title>
 </head>
@@ -24,7 +27,7 @@
 <body class="dark-blue">
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark-blue border-bottom border-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="images/akitalogo.webp" alt="" width="60"> Akita Inu ASA
             </a>
             <button class="navbar-toggler rounded-4 shadow-sm purpleGradient" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,25 +36,25 @@
             <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-0 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#charity">Charity</a>
+                        <a class="nav-link" aria-current="page" href="/#charity">Charity</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#carbon">Sustainability</a>
+                        <a class="nav-link" aria-current="page" href="/#carbon">Sustainability</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#ecosystem">Ecosystem</a>
+                        <a class="nav-link" aria-current="page" href="/#ecosystem">Ecosystem</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#timeline">Timeline</a>
+                        <a class="nav-link" aria-current="page" href="/#timeline">Timeline</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#nfts">NFTs</a>
+                        <a class="nav-link" aria-current="page" href="/#nfts">NFTs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#community">Community</a>
+                        <a class="nav-link" aria-current="page" href="/#community">Community</a>
                     </li>
                 </ul>
                 <div class="d-flex">
@@ -70,8 +73,8 @@
                     <div class="px-4 px-md-0">
                         <h2 class="mb-4">AKITA INU TOKEN is the premier decentralized community ASA on the Algorand Blockchain.</h2>
                         <p clas="mb-4">1 Billion AKITA were created on inception. More details of how AKITA is distributed can be found below.</p>
-                        <a href="how-to-buy.html" id="buy-akita-now-btn" class="btn btn-light btn-lg rounded-pill"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; Buy Akita Inu Now&nbsp;&nbsp;</a>
-                        <a href="documents/AKITAINU-WHITEPAPER-1.1.pdf" target="_blank" class="btn bg-dark-blue text-white btn-lg rounded-pill my-3"><img src="images/AkitaInu-webicon-paperwhite2.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; White Paper&nbsp;&nbsp;</a>
+                        <a href="/how-to-buy" id="buy-akita-now-btn" class="btn btn-light btn-lg rounded-pill"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; Buy Akita Inu Now&nbsp;&nbsp;</a>
+                        <a href="/documents/AKITAINU-WHITEPAPER-1.1.pdf" target="_blank" class="btn bg-dark-blue text-white btn-lg rounded-pill my-3"><img src="images/AkitaInu-webicon-paperwhite2.webp" class="img-fluid" width="40" /> &nbsp;&nbsp; White Paper&nbsp;&nbsp;</a>
                         <h4 class="mt-2" id="transactions"><h3>
                     </div>
                 </div>
@@ -187,8 +190,8 @@
                         </ul>
                     </div>
                     <div class="text-center mt-4">
-                        <a href="documents/AKITAroadmap-11.15.png" target="_blank" rel="no-referrer" id="roadmap-btn" class="btn btn-lg btn-light text-black rounded-pill my-2"><img src="images/AkitaInu-webicon-paperblue2.webp" class="img-fluid" width="40" /> &nbsp;Roadmap&nbsp;&nbsp;</a>
-                        <a href="how-to-buy.html" class="btn btn-lg btn-light text-black rounded-pill my-2"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;Buy Akita Inu Now&nbsp;&nbsp;</a>
+                        <a href="/documents/AKITAroadmap-11.15.png" target="_blank" rel="no-referrer" id="roadmap-btn" class="btn btn-lg btn-light text-black rounded-pill my-2"><img src="images/AkitaInu-webicon-paperblue2.webp" class="img-fluid" width="40" /> &nbsp;Roadmap&nbsp;&nbsp;</a>
+                        <a href="/how-to-buy" class="btn btn-lg btn-light text-black rounded-pill my-2"><img src="images/Akita-Inu.webp" class="img-fluid" width="40" /> &nbsp;Buy Akita Inu Now&nbsp;&nbsp;</a>
                     </div>
                 </div>
             </div>
@@ -387,7 +390,7 @@
     </div>
     <div class="py-5 bg-dark-blue">
         <div class="container text-center">
-            <a href="how-to-buy.html" class="btn btn-light btn-sm mx-2 my-2">How to Buy</a>
+            <a href="/how-to-buy" class="btn btn-light btn-sm mx-2 my-2">How to Buy</a>
             <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-light btn-sm mx-2 my-2">Swap on Tinyman</a>
             <a href="https://algorand.foundation/" target="_blank" class="btn btn-light btn-sm mx-2 my-2">Algorand Foundation</a><br />
             <p class="pt-3 mb-0">&copy; 2021 Akita Inu ASA</p>
@@ -412,7 +415,7 @@
 
         getJSON('https://mainnet.analytics.tinyman.org/api/v1/current-asset-prices/',
             function(err, data) {
-                if (err !== null) {
+                if (err !== null || !data['384303832']) {
 
                 } else {
                     document.getElementById("price").innerHTML = '$' + data['384303832'].price;
