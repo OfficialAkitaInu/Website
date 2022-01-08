@@ -412,7 +412,7 @@
 
         getJSON('https://mainnet.analytics.tinyman.org/api/v1/current-asset-prices/',
             function(err, data) {
-                if (err !== null) {
+                if (err !== null || !data['384303832']) {
 
                 } else {
                     document.getElementById("price").innerHTML = '$' + data['384303832'].price;

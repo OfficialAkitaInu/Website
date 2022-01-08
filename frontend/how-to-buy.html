@@ -214,49 +214,13 @@
 
         getJSON('https://mainnet.analytics.tinyman.org/api/v1/current-asset-prices/',
             function(err, data) {
-                if (err !== null) {
+                if (err !== null || !data['384303832']) {
 
                 } else {
                     document.getElementById("price").innerHTML = '$' + data['384303832'].price;
                     let intervalId = window.setInterval(function(){
                         document.getElementById("price").innerHTML = '$' + data['384303832'].price;
                     }, 10000);
-                }
-            });
-
-        getJSON('https://indexer.algoexplorerapi.io/v2/assets/384303832?include-all=true',
-            function(err, data) {
-                if (err !== null) {
-
-                } else {
-
-                    // TOTAL CARBON OFFSET
-                    const carbonOffset = 5.0000000000;
-
-                    // ALGO KWH PER TRANSACTION
-                    const kwhCost = 0.000008;
-
-                    // KWH TOTAL CARBON METRIC TONNE
-                    const carbonPound = 0.0003855535;
-
-                    //TOTAL KWH USED
-                    let totalKwh = data.asset['asset-tx-counter'] * kwhCost;
-                    let totalKwh2 = data.asset['asset-tx-counter'] * 70;
-                    
-                    // TOTAL USED PERCENTAGE
-                    let totalPercentage = ((totalKwh*carbonPound)/10000000000).toFixed(20);
-                    
-                    let totalPercentage2 = ((totalKwh2*carbonPound)/100).toFixed(20);
-
-                    document.getElementById("txcount").innerHTML = totalKwh.toFixed(5) + ' <small>KWh</small>';
-                    //document.getElementById("progress").innerHTML = (100 - totalPercentage) + '%';
-                    document.getElementById("progress").innerHTML = 0 - (carbonOffset - (totalKwh*carbonPound)).toLocaleString('en-US')+' Mg (t)';
-                    
-                    document.getElementById("txcount2").innerHTML = totalKwh2.toLocaleString('en-US') + ' <small>KWh</small>';
-                    document.getElementById("progress2").innerHTML = (totalKwh2*carbonPound).toLocaleString('en-US')+' Mg (t)';
-                    
-                    //This is to add the transaction count to an ID of your choice.
-                    document.getElementById("transactions").innerHTML = data.asset['asset-tx-counter'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " AKITA Transactions";
                 }
             });
 
