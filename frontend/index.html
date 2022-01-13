@@ -48,15 +48,15 @@
                         <a class="nav-link" aria-current="page" href="#timeline">Timeline</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#nfts">NFTs</a>
+                        <a class="nav-link" aria-current="page" target="_blank" rel="noreferrer" href="https://nft.akita.community">NFTs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#community">Community</a>
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a href="https://tinychart.org/asset/384303832" target="_blank" class="btn rounded-pill btn-success mx-auto ms-xl-2 d-block d-xl-inline mt-2 mb-4 m-xl-0" id="price">Loading...</a>
-                    <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-dark purpleGradient rounded-pill mx-auto ms-xl-2 d-block d-xl-inline mt-2 mb-4 m-xl-0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exchange-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="d-inline-block" width="18">
+                    <a href="https://tinychart.org/asset/523683256" target="_blank" class="btn rounded-pill btn-success mx-auto ms-xl-2 d-block d-xl-inline mt-2 mb-4 m-xl-0" id="price">Loading...</a>
+                    <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=523683256" target="_blank" class="btn btn-dark purpleGradient rounded-pill mx-auto ms-xl-2 d-block d-xl-inline mt-2 mb-4 m-xl-0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exchange-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="d-inline-block" width="18">
                             <path fill="currentColor" d="M0 168v-16c0-13.255 10.745-24 24-24h360V80c0-21.367 25.899-32.042 40.971-16.971l80 80c9.372 9.373 9.372 24.569 0 33.941l-80 80C409.956 271.982 384 261.456 384 240v-48H24c-13.255 0-24-10.745-24-24zm488 152H128v-48c0-21.314-25.862-32.08-40.971-16.971l-80 80c-9.372 9.373-9.372 24.569 0 33.941l80 80C102.057 463.997 128 453.437 128 432v-48h360c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24z" class=""></path>
                         </svg> Swap on Tinyman</a>
                 </div>
@@ -166,7 +166,7 @@
             <div class="row row-eq-height text-white">
                 <div class="col-12 col-md-5 offset-md-1 px-4">
                     <div class="bg-dark p-4 rounded-4">
-                        <h4>AKITA INU TOKEN<br /><small class="text-white-50">ASA ID#384303832</small></h4>
+                        <h4>AKITA INU TOKEN<br /><small class="text-white-50">ASA ID#523683256</small></h4>
                         <ul>
                             <li>1 Billion AKITA INU created</li>
                             <li>350,000,000 added to Tinyman Liquidity Pool (35%)</li>
@@ -278,14 +278,14 @@
             </div>
             <div class="row">
                 <div class="col-8 col-md-6 pb-3">
-                    <div class="rounded-3 bg-white text-black py-3 px-4">
-                        <h4 class="semi-bold">Smart Contracts</h4>
-                        We're working round the clock to time-lock the creator's wallet and secure the Community Fund
+                    <div class="rounded-3 bg-white text-black-50 py-3 px-4 done">
+                        <h4 class="semi-bold">Merch Store</h4>
+                        Wear your original AKITA designs with pride while we reinvest the profits to support the community
                     </div>
                 </div>
                 <div class="col border-left-dotted last">
                     <div class="p-2 d-inline-block bg-light text-dark rounded text-start">
-                        Q4<br/><strong>2021</strong>
+                        Q1<br/><strong>2022</strong>
                     </div>
                 </div>
             </div>
@@ -297,8 +297,8 @@
                 </div>
                 <div class="col-8 col-md-6 pb-3 border-left-dotted">
                     <div class="rounded-3 bg-white text-black py-3 px-4">
-                        <h4 class="semi-bold">Merch Store</h4>
-                        Wear your original AKITA designs with pride while we reinvest the profits to support the community
+                        <h4 class="semi-bold">Smart Contracts</h4>
+                        We're working round the clock to time-lock the creator's wallet and secure the Community Fund
                     </div>
                 </div>
             </div>
@@ -388,7 +388,7 @@
     <div class="py-5 bg-dark-blue">
         <div class="container text-center">
             <a href="how-to-buy.html" class="btn btn-light btn-sm mx-2 my-2">How to Buy</a>
-            <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=384303832" target="_blank" class="btn btn-light btn-sm mx-2 my-2">Swap on Tinyman</a>
+            <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=523683256" target="_blank" class="btn btn-light btn-sm mx-2 my-2">Swap on Tinyman</a>
             <a href="https://algorand.foundation/" target="_blank" class="btn btn-light btn-sm mx-2 my-2">Algorand Foundation</a><br />
             <p class="pt-3 mb-0">&copy; 2021 Akita Inu ASA</p>
         </div>
@@ -415,18 +415,27 @@
                 if (err !== null) {
 
                 } else {
-                    document.getElementById("price").innerHTML = '$' + data['384303832'].price;
+                    document.getElementById("price").innerHTML = '$' + data['523683256'].price;
                     let intervalId = window.setInterval(function(){
-                        document.getElementById("price").innerHTML = '$' + data['384303832'].price;
+                        document.getElementById("price").innerHTML = '$' + data['523683256'].price;
                     }, 10000);
                 }
             });
 
-        getJSON('https://indexer.algoexplorerapi.io/v2/assets/384303832?include-all=true',
-            function(err, data) {
+        getJSON('https://indexer.algoexplorerapi.io/v2/assets/523683256?include-all=true',
+            async function(err, data) {
                 if (err !== null) {
+                    return;
+                } 
+                else {
+                    let old_transactions = 0;
+                    await fetch('https://indexer.algoexplorerapi.io/v2/assets/384303832?include-all=true')
+                        .then((response) => response.json())
+                        .then((old_data) => {
+                            old_transactions = old_data.asset['asset-tx-counter']
+                        })
 
-                } else {
+                    data.asset['asset-tx-counter'] = data.asset['asset-tx-counter'] + old_transactions;
 
                     // TOTAL CARBON OFFSET
                     const carbonOffset = 5.0000000000;
